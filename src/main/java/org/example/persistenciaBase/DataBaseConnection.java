@@ -10,7 +10,7 @@ public class DataBaseConnection {
     private static final String PASSWORD = DataBaseConfig.getPassword();
 
     public static Connection getConnection() throws SQLException {
-        // Crea una nueva conexión en cada llamada
+
         return DriverManager.getConnection(URL, USER, PASSWORD);
     }
 }

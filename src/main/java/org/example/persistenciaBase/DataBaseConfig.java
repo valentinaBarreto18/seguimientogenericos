@@ -8,7 +8,7 @@ public class DataBaseConfig {
 
     static {
         try {
-            // Cargar el archivo de propiedades desde el classpath
+
             properties.load(DataBaseConfig.class.getClassLoader().getResourceAsStream("config.properties"));
         } catch (IOException e) {
             e.printStackTrace();
